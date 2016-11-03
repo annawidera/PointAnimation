@@ -1,0 +1,1 @@
+![PointAnimationCustomTransition-small-optimized](/uploads/99c7b1d808b833a4c033943175875f64/PointAnimationCustomTransition-small-optimized.gif)
