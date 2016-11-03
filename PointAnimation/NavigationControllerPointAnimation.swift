@@ -28,6 +28,11 @@ class NavigationControllerPointAnimation: NSObject, UINavigationControllerDelega
     }
     
     @IBAction func panned(gestureRecognizer: UIPanGestureRecognizer) {
+        
+        func distanceSquare(x: CGFloat, y: CGFloat) -> CGFloat {
+            return (x*x + y*y)
+        }
+        
         switch gestureRecognizer.state {
         case .began:
                 self.interactionController = UIPercentDrivenInteractiveTransition()
@@ -40,11 +45,21 @@ class NavigationControllerPointAnimation: NSObject, UINavigationControllerDelega
             
         case .changed:
             let translation = gestureRecognizer.translation(in: self.navigationController!.view)
-            let completion = translation.x/self.navigationController!.view.bounds.width
+            
+            if !(translation.x < 0 && translation.y > 0) {
+                self.interactionController?.update(0)
+                break;
+            }
+            let distance = ( translation: distanceSquare(x: translation.x, y: translation.y),
+                             viewDiagonal: distanceSquare(x: self.navigationController!.view.bounds.width, y: self.navigationController!.view.bounds.width) )
+       
+            let completion = distance.translation/distance.viewDiagonal
             self.interactionController?.update(completion)
             
         case .ended:
-            gestureRecognizer.velocity(in: self.navigationController!.view).x > 0 ? self.interactionController?.finish() : self.interactionController?.cancel()
+            let velocity = gestureRecognizer.velocity(in: self.navigationController!.view)
+            
+            (velocity.x < 0 && velocity.y > 0) ? self.interactionController?.finish() : self.interactionController?.cancel()
             self.interactionController = nil
             
         default:
