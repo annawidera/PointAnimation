@@ -125,7 +125,11 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHn-la-5Kd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="UjS-2t-QIN" customClass="NavigationControllerPointAnimation" customModule="PointAnimation" customModuleProvider="target"/>
+                <customObject id="UjS-2t-QIN" customClass="NavigationControllerPointAnimation" customModule="PointAnimation" customModuleProvider="target">
+                    <connections>
+                        <outlet property="navigationController" destination="74g-w3-Yf0" id="p3A-6b-nkJ"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="66" y="123"/>
         </scene>
