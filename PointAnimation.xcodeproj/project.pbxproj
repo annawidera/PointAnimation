@@ -14,6 +14,8 @@
 		01A54AC71DCB312200AFCAF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A54AC51DCB312200AFCAF1 /* LaunchScreen.storyboard */; };
 		01A54AD21DCB312200AFCAF1 /* PointAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A54AD11DCB312200AFCAF1 /* PointAnimationTests.swift */; };
 		01A54ADD1DCB312200AFCAF1 /* PointAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A54ADC1DCB312200AFCAF1 /* PointAnimationUITests.swift */; };
+		01A54AEB1DCB439B00AFCAF1 /* NavigationControllerPointAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A54AEA1DCB439B00AFCAF1 /* NavigationControllerPointAnimation.swift */; };
+		01A54AED1DCB450300AFCAF1 /* PointTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A54AEC1DCB450300AFCAF1 /* PointTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		01A54AD81DCB312200AFCAF1 /* PointAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PointAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A54ADC1DCB312200AFCAF1 /* PointAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointAnimationUITests.swift; sourceTree = "<group>"; };
 		01A54ADE1DCB312200AFCAF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01A54AEA1DCB439B00AFCAF1 /* NavigationControllerPointAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerPointAnimation.swift; sourceTree = "<group>"; };
+		01A54AEC1DCB450300AFCAF1 /* PointTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointTransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				01A54ABC1DCB312100AFCAF1 /* AppDelegate.swift */,
 				01A54ABE1DCB312200AFCAF1 /* ViewController.swift */,
 				01A54AC01DCB312200AFCAF1 /* Main.storyboard */,
+				01A54AEA1DCB439B00AFCAF1 /* NavigationControllerPointAnimation.swift */,
+				01A54AEC1DCB450300AFCAF1 /* PointTransitionAnimator.swift */,
 				01A54AC31DCB312200AFCAF1 /* Assets.xcassets */,
 				01A54AC51DCB312200AFCAF1 /* LaunchScreen.storyboard */,
 				01A54AC81DCB312200AFCAF1 /* Info.plist */,
@@ -262,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A54AED1DCB450300AFCAF1 /* PointTransitionAnimator.swift in Sources */,
 				01A54ABF1DCB312200AFCAF1 /* ViewController.swift in Sources */,
+				01A54AEB1DCB439B00AFCAF1 /* NavigationControllerPointAnimation.swift in Sources */,
 				01A54ABD1DCB312100AFCAF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
