@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		016508CF1F017D2A00947566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016508CD1F017D2A00947566 /* Main.storyboard */; };
 		01A54ABD1DCB312100AFCAF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A54ABC1DCB312100AFCAF1 /* AppDelegate.swift */; };
 		01A54ABF1DCB312200AFCAF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A54ABE1DCB312200AFCAF1 /* ViewController.swift */; };
-		01A54AC21DCB312200AFCAF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A54AC01DCB312200AFCAF1 /* Main.storyboard */; };
 		01A54AC41DCB312200AFCAF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A54AC31DCB312200AFCAF1 /* Assets.xcassets */; };
 		01A54AC71DCB312200AFCAF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A54AC51DCB312200AFCAF1 /* LaunchScreen.storyboard */; };
 		01A54AD21DCB312200AFCAF1 /* PointAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A54AD11DCB312200AFCAF1 /* PointAnimationTests.swift */; };
@@ -36,10 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		016508CE1F017D2A00947566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01A54AB91DCB312100AFCAF1 /* PointAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PointAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A54ABC1DCB312100AFCAF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01A54ABE1DCB312200AFCAF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		01A54AC11DCB312200AFCAF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01A54AC31DCB312200AFCAF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01A54AC61DCB312200AFCAF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01A54AC81DCB312200AFCAF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,9 +101,9 @@
 		01A54ABB1DCB312100AFCAF1 /* PointAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				016508CD1F017D2A00947566 /* Main.storyboard */,
 				01A54ABC1DCB312100AFCAF1 /* AppDelegate.swift */,
 				01A54ABE1DCB312200AFCAF1 /* ViewController.swift */,
-				01A54AC01DCB312200AFCAF1 /* Main.storyboard */,
 				01A54AEA1DCB439B00AFCAF1 /* NavigationControllerPointAnimation.swift */,
 				01A54AEC1DCB450300AFCAF1 /* PointTransitionAnimator.swift */,
 				01A54AC31DCB312200AFCAF1 /* Assets.xcassets */,
@@ -241,9 +241,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016508CF1F017D2A00947566 /* Main.storyboard in Resources */,
 				01A54AC71DCB312200AFCAF1 /* LaunchScreen.storyboard in Resources */,
 				01A54AC41DCB312200AFCAF1 /* Assets.xcassets in Resources */,
-				01A54AC21DCB312200AFCAF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,10 +307,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		01A54AC01DCB312200AFCAF1 /* Main.storyboard */ = {
+		016508CD1F017D2A00947566 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				01A54AC11DCB312200AFCAF1 /* Base */,
+				016508CE1F017D2A00947566 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -424,7 +424,7 @@
 				DEVELOPMENT_TEAM = TY8623XFDY;
 				INFOPLIST_FILE = PointAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.netizens.PointAnimation;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.annawidera.PointAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -437,7 +437,7 @@
 				DEVELOPMENT_TEAM = TY8623XFDY;
 				INFOPLIST_FILE = PointAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.netizens.PointAnimation;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.annawidera.PointAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -520,6 +520,7 @@
 				01A54AE31DCB312200AFCAF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01A54AE41DCB312200AFCAF1 /* Build configuration list for PBXNativeTarget "PointAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +529,7 @@
 				01A54AE61DCB312200AFCAF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01A54AE71DCB312200AFCAF1 /* Build configuration list for PBXNativeTarget "PointAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +538,7 @@
 				01A54AE91DCB312200AFCAF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
